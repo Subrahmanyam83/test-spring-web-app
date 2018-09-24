@@ -2,34 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d064a5-93bf-4dbc-8577-49dca6d5aa4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__avalon_framework_avalon_framework_4_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_servlet_api_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__logkit_logkit_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_attoparser_attoparser_2_0_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_all_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_mock_2_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_unbescape_unbescape_1_1_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerCredits.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ChargingException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/InvalidSearchRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/customerdetails.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/static/search.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/search.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/annotation-processors.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" />
@@ -49,24 +21,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.class" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/Customer.class" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/Customer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exercise-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/exercise-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercise.pdf" afterPath="$PROJECT_DIR$/exercise.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_icdpublishing_exercise2_legacy_charging_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_icdpublishing_exercise2_legacy_charging_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_icdpublishing_exercise2_search_engine_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_icdpublishing_exercise2_search_engine_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/exercise_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/exercise_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/exercise_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/exercise_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/application.properties" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/signin.ftl" afterPath="$PROJECT_DIR$/build/resources/main/templates/signin.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/signin.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/signin.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1423,6 +1380,14 @@
       <option name="presentableId" value="Default" />
       <updated>1537546972277</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding new features">
+      <created>1537814192676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537814192676</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1538,6 +1503,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding new features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1674,6 +1643,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1681,6 +1651,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1691,6 +1662,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="68" lean-forward="false" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+          <folding>
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
