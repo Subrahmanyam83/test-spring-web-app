@@ -9,7 +9,6 @@ import com.hooyu.exercise.customers.domain.Customer;
 import net.icdpublishing.exercise2.searchengine.domain.Record;
 import net.icdpublishing.exercise2.searchengine.requests.SimpleSurnameAndPostcodeQuery;
 import net.icdpublishing.exercise2.searchengine.services.SearchEngineRetrievalService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +30,7 @@ public class SignInController {
     private SearchEngineRetrievalService retrievalService;
     HardcodedListOfCustomerCreditsImpl hardcodedListOfCustomerCredits;
 
-    Customer cust;
+    private Customer cust;
     HttpSession session;
     int creditsBalance =0;
     int numberOfRecordsRetireved=0;
@@ -74,7 +73,7 @@ public class SignInController {
         }
         else
             throw new NullPointerException();
-        records = processFetchedDetailsFromURI(surname,postcode);
+        records = fetchedDetailsFromURI(surname,postcode);
         ModelAndView model = new ModelAndView();
         model.setViewName("customerdetails");
         model.addObject("records",records);
@@ -89,11 +88,12 @@ public class SignInController {
     @ResponseBody
     public  Collection<Record> searchDetails_json_output(@RequestParam String surname, @RequestParam String postcode, Model model)
     {
-        records = processFetchedDetailsFromURI(surname,postcode);
+        records = fetchedDetailsFromURI(surname,postcode);
         return records;
     }
 
-    public Collection<Record> processFetchedDetailsFromURI(String surname, String postcode)
+    /**/
+    public Collection<Record> fetchedDetailsFromURI(String surname, String postcode)
     {
         //System.out.print("in controller surname entered is " + surname +"Postcode is " +postcode);
         query = new SimpleSurnameAndPostcodeQuery(surname,postcode);

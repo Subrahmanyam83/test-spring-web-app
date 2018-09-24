@@ -4,7 +4,10 @@ import com.hooyu.exercise.customers.CustomerService
 import com.hooyu.exercise.customers.dao.HardcodedListOfCustomersImpl
 import com.hooyu.exercise.customers.domain.Customer
 import com.hooyu.exercise.customers.domain.CustomerType
+import net.icdpublishing.exercise2.searchengine.domain.Address
+import net.icdpublishing.exercise2.searchengine.domain.Person
 import net.icdpublishing.exercise2.searchengine.domain.Record
+import net.icdpublishing.exercise2.searchengine.domain.SourceType
 import net.icdpublishing.exercise2.searchengine.requests.SimpleSurnameAndPostcodeQuery
 import org.powermock.api.mockito.PowerMockito
 import org.powermock.core.classloader.annotations.PrepareForTest
@@ -16,21 +19,20 @@ import spock.lang.Specification
 import org.springframework.mock.web.MockHttpServletRequest
 import javax.servlet.http.HttpSession;
 import org.junit.runner.*;
-import org.powermock.api.mockito.PowerMockito;
+import org.powermock.api.mockito.PowerMockito
+
+import java.lang.reflect.Field;
 
 /**
  * Created by Subrahmanyam on 24/09/2018.
  */
 
-//@RunWith(PowerMockRunner.class)
 @PrepareForTest(value = CustomerService.class)
 class SigninControllerTest extends Specification {
-    //SignInController controller;
+
+    SignInController controller;
     SimpleSurnameAndPostcodeQuery query;
     MockHttpSession mockHttpSession;
-
-    //@Autowired
-    SignInController controller;
 
 
     def setup() {
@@ -62,7 +64,7 @@ class SigninControllerTest extends Specification {
 //        assert returnValue.equals("search.html");
 //    }
 
-    def "Test Subu test"() {
+    def "authorized customer on sigining in, search form must come"() {
 
         when: "this is dalling "
 
@@ -71,7 +73,7 @@ class SigninControllerTest extends Specification {
         CustomerService spyCustomerService = PowerMockito.mock(CustomerService.class);
         PowerMockito.whenNew(CustomerService.class).withNoArguments().thenReturn(spyCustomerService);
 
-        PowerMockito.when(spyCustomerService.findCustomerByEmailAddress(anyString())).thenReturn(getExpectedCustomer())
+        PowerMockito.when(spyCustomerService.findCustomerByEmailAddress(asType(String.class))).thenReturn(getExpectedCustomer())
 
         and:
         String returnValue = signInController.signin_success("john.doe@192.com", mockHttpSession)
@@ -81,15 +83,7 @@ class SigninControllerTest extends Specification {
     }
 
 
-    def "Test subu test 1"() {
 
-        when:
-        int a = 10;
-
-        then:
-        a > 4
-
-    }
 /*
 
     def "Returning Records in Tabular format"() {
@@ -106,14 +100,25 @@ class SigninControllerTest extends Specification {
 
     def "Find records for provided Surname + Postcode"() {
         given: "I have record details for Surname - Smith and postcode - sw6 2bq"
-        Arrays arrays = ['']
-        arrays.sort();
+
+        String surname= "Smith";
+        String postCode = "sw6 2bq"
+
+
+        Field f = SignInController.getDeclaredField("cust"); //NoSuchFieldException
+        f.setAccessible(true);
+
+
+        Customer customer =(Customer)f.get(controller);
+        printf "fd"+customer;
+        customer=getExpectedCustomer();
+
 
         when:
-        Collection<Record> records = controller.processFetchedDetailsFromURI("Smith", "sw6 2bq")
+        Collection<Record> recordCollection = controller.fetchedDetailsFromURI(surname,postCode);
 
         then:
-        assert records.toArray().toSorted().equals()
+        assert recordCollection.sort().equals(getExpectedRecords().sort());
 
     }
 
@@ -134,21 +139,46 @@ class SigninControllerTest extends Specification {
         return expectedCustomer;
     }
 
-    def getExpectedCustomers() {
-        Collection<Customer> customerArrayList = new ArrayList<Customer>();
-        Customer expectedCustomer1 = new Customer();
-        Customer expectedCustomer2 = new Customer();
-        expectedCustomer1.setEmailAddress("john.doe@192.com");
-        expectedCustomer1.setForename("John");
-        expectedCustomer1.setSurname("Doe");
-        expectedCustomer1.setCustomType(CustomerType.PREMIUM);
-        expectedCustomer2.setEmailAddress("sally.smith@192.com");
-        expectedCustomer2.setForename("sally");
-        expectedCustomer2.setSurname("smith");
-        expectedCustomer2.setCustomType(CustomerType.PREMIUM);
-        customerArrayList.add(expectedCustomer1);
-        customerArrayList.add(expectedCustomer2);
-        return customerArrayList;
+    def getExpectedRecords() {
+        Collection<Record> recordCollection = new ArrayList<Record>();
+        Person p1 = new Person();
+        p1.setForename("Alfred");
+        p1.setMiddlename("Duncan");
+        p1.setSurname("Smith");
+        p1.setTelephone("07702828333");
+
+        Address address1 = new Address();
+        address1.setBuildnumber("1");
+        address1.setPostcode("sw6 2bq");
+        address1.setStreet("william morris way");
+        address1.setTown("London");
+        p1.setAddress(address1);
+
+        Set<SourceType> sources1 = new HashSet<SourceType>();
+        sources1.add(SourceType.BT);
+        sources1.add(SourceType.DNB);
+        sources1.add(SourceType.ELECTORAL_ROLL);
+        Record r1 = new Record(p1,sources1);
+
+        Person p2 = new Person();
+        p2.setForename("Mary");
+        p2.setMiddlename("Ann");
+        p2.setSurname("Smith");
+        p2.setTelephone("07702811339");
+
+        Address address2 = new Address();
+        address2.setBuildnumber("13");
+        address2.setPostcode("sw6 2bq");
+        address2.setStreet("william morris way");
+        address2.setTown("London");
+        p2.setAddress(address2);
+
+        Set<SourceType> sources2 = new HashSet<SourceType>();
+        sources2.add(SourceType.BT);
+        Record r2 = new Record(p2,sources2);
+        recordCollection.add(r1);
+        recordCollection.add(r2);
+        return recordCollection;
     }
 
 }

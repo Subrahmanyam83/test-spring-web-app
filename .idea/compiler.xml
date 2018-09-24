@@ -4,8 +4,6 @@
     <bytecodeTargetLevel>
       <module name="exercise_main" target="1.8" />
       <module name="exercise_test" target="1.8" />
-      <module name="test-spring-web-app_main" target="1.8" />
-      <module name="test-spring-web-app_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
