@@ -27,7 +27,15 @@ class HardcodedListOfCustomersImplTest extends Specification {
 		then:
 			thrown(CustomerNotFoundException.class)
 	}
-	
+
+	def "should return list of  Customers"() {
+		when:
+		customerImpl.getCustomers()
+
+		then:
+		ArrayList<Customer> allCustomers;
+	}
+
 	def getExpectedCustomer() {
 		Customer expectedCustomer = new Customer();
 		expectedCustomer.setEmailAddress("john.doe@192.com");

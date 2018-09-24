@@ -14,10 +14,10 @@ public class SearchController {
 		this.retrievalService = retrievalService;
 	}
 	
-	public Collection<Record> handleRequest(SearchRequest request) {
+	/*public Collection<Record> handleRequest(SearchRequest request) {
 		Collection<Record> resultSet = getResults(request.getQuery());
 		return resultSet;
-	}
+	}*/
 	
 	private Collection<Record> getResults(SimpleSurnameAndPostcodeQuery query) {
 		return retrievalService.search(query);

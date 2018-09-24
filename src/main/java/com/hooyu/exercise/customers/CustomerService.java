@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 public class CustomerService extends HardcodedListOfCustomersImpl {
 
 
-    private HardcodedListOfCustomersImpl customersList = new HardcodedListOfCustomersImpl();
+   // private HardcodedListOfCustomersImpl customersList = new HardcodedListOfCustomersImpl();
 
 
 
