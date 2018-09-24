@@ -24,7 +24,7 @@ import org.powermock.api.mockito.PowerMockito;
 
 //@RunWith(PowerMockRunner.class)
 @PrepareForTest(value = CustomerService.class)
-class SigninControllerTest extends Specification{
+class SigninControllerTest extends Specification {
     //SignInController controller;
     SimpleSurnameAndPostcodeQuery query;
     MockHttpSession mockHttpSession;
@@ -33,23 +33,16 @@ class SigninControllerTest extends Specification{
     SignInController controller;
 
 
-
-
-
     def setup() {
         //customer_details= new CustomerService();
         controller = new SignInController();
-        query=new SimpleSurnameAndPostcodeQuery("Smith","sw6 2bq");
+        query = new SimpleSurnameAndPostcodeQuery("Smith", "sw6 2bq");
         mockHttpSession = new MockHttpSession();
 
     }
 
-
-
-
 //    @Rule
 //    public MockitoRule mockitoRule = MockitoJUnit.rule();
-
 
 //    def "authorized customer on sigining in, search form must come"() {
 //
@@ -81,20 +74,20 @@ class SigninControllerTest extends Specification{
         PowerMockito.when(spyCustomerService.findCustomerByEmailAddress(anyString())).thenReturn(getExpectedCustomer())
 
         and:
-        String returnValue = signInController.signin_success("john.doe@192.com",mockHttpSession)
+        String returnValue = signInController.signin_success("john.doe@192.com", mockHttpSession)
 
         then:
         assert returnValue.equals("search.html");
     }
 
 
-    def "Test subu test 1"(){
+    def "Test subu test 1"() {
 
         when:
-        int a =10;
+        int a = 10;
 
         then:
-        a>4
+        a > 4
 
     }
 /*
@@ -117,13 +110,12 @@ class SigninControllerTest extends Specification{
         arrays.sort();
 
         when:
-        Collection<Record> records =controller.processFetchedDetailsFromURI("Smith","sw6 2bq")
+        Collection<Record> records = controller.processFetchedDetailsFromURI("Smith", "sw6 2bq")
 
         then:
         assert records.toArray().toSorted().equals()
 
     }
-
 
 //    def "Process records based on customer and returns credits"() {
 //        when:
@@ -159,4 +151,4 @@ class SigninControllerTest extends Specification{
         return customerArrayList;
     }
 
-
+}
