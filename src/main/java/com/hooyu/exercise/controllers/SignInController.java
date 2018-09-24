@@ -22,8 +22,8 @@ import java.util.LinkedList;
 @Controller
 public class SignInController {
 
-    @Autowired
-    private CustomerService customer_details;
+   // @Autowired
+    private CustomerService customer_details=new CustomerService();
     private SearchController searchController;
     private SearchRequest searchRequest;
     private SimpleSurnameAndPostcodeQuery query;

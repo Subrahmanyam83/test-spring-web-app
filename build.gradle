@@ -37,7 +37,15 @@ dependencies {
         exclude module:'spring-boot-starter-jetty'
     }
     testCompile group: 'org.springframework', name: 'spring-mock', version: '2.0.8'
-    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+// https://mvnrepository.com/artifact/org.mockito/mockito-all
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '2.0.2-beta'
+    testCompile 'org.mockito:mockito-core:2.7.22'
+    testCompile 'junit:junit:4.12'
+    // https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.7.4'
+// https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '2.0.0-beta.5'
+
 
 
     // https://mvnrepository.com/artifact/org.spockframework/spock-core
