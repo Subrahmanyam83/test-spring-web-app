@@ -31,7 +31,7 @@ public class SignInController {
     HardcodedListOfCustomerCreditsImpl hardcodedListOfCustomerCredits;
 
     private Customer cust;
-    HttpSession session;
+    private HttpSession session;
     int creditsBalance =0;
     int numberOfRecordsRetireved=0;
     Collection<Record> records;

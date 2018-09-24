@@ -104,22 +104,16 @@ class SigninControllerTest extends Specification {
         String surname= "Smith";
         String postCode = "sw6 2bq"
 
-
-        Field f = SignInController.getDeclaredField("cust"); //NoSuchFieldException
-        f.setAccessible(true);
-
-
-        Customer customer =(Customer)f.get(controller);
-        printf "fd"+customer;
-        customer=getExpectedCustomer();
-
+        SimpleSurnameAndPostcodeQuery simpleSurnameAndPostcodeQuery = new SimpleSurnameAndPostcodeQuery(surname,postCode);
+        Customer customer = getExpectedCustomer();
 
         when:
-        Collection<Record> recordCollection = controller.fetchedDetailsFromURI(surname,postCode);
+
+        Collection<Record> collection = controller.processRecordsforCredits(simpleSurnameAndPostcodeQuery,customer);
 
         then:
-        assert recordCollection.sort().equals(getExpectedRecords().sort());
 
+        assert collection.toArray().sort()[0].equals(getExpectedRecords().toArray().sort()[0])
     }
 
 //    def "Process records based on customer and returns credits"() {
