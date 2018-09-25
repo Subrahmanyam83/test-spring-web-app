@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: net.icdpublishing.exercise2:search-engine:1.0">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/external_dependencies/search-engine-1.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
