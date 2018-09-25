@@ -15,25 +15,10 @@ public class HardcodedListOfCustomerCreditsImpl implements CustomerCreditsDao{
     private static Map<Customer,Integer> customersCredits = new HashMap<>();
     private HardcodedListOfCustomersImpl hardcodedListOfCustomers = new HardcodedListOfCustomersImpl();
 
-   public void poulateCustomerCredits()
-    {
-        for (Customer c:hardcodedListOfCustomers.getCustomers()
-                ) {
-            if(c.getCustomType().toString().contains("PREMIUM"))
-            {
-                customersCredits.put(c,192);
-
-            }
-            else
-            {
-                customersCredits.put(c,0);
-            }
-
-        }
-    }
     @Override
     public int getCustomerCredits(String email)
     {
+        poulateCustomerCredits();
         for (Customer c:hardcodedListOfCustomers.getCustomers()
                 )
         {
@@ -46,7 +31,27 @@ public class HardcodedListOfCustomerCreditsImpl implements CustomerCreditsDao{
         return 0;
     }
 
-    public void setCustomersCredits(String email,int customerCredits)
+    public void poulateCustomerCredits()
+    {
+        for (Customer c:hardcodedListOfCustomers.getCustomers()
+        ) {
+            if(c.getCustomType().toString().contains("PREMIUM"))
+            {
+                customersCredits.put(c,192);
+
+            }
+            else
+            {
+                customersCredits.put(c,0);
+            }
+
+        }
+    }
+
+
+    /*This method is not required - Check once*/
+
+   /* public void setCustomersCredits(String email,int customerCredits)
     {
         for (Customer c:hardcodedListOfCustomers.getCustomers()
                 )
@@ -57,5 +62,5 @@ public class HardcodedListOfCustomerCreditsImpl implements CustomerCreditsDao{
             }
 
         }
-    }
+    }*/
 }

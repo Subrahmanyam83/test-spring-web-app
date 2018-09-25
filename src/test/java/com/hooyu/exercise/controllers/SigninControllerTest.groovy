@@ -104,6 +104,17 @@ class SigninControllerTest extends Specification {
         String surname= "Smith";
         String postCode = "sw6 2bq"
 
+
+
+        Field field = controller.getClass().getDeclaredField("cust");
+        if(field.equals(null)){
+            println("alue is null")
+        }
+        field.setAccessible(true)
+        SignInController sign = new SignInController();
+        field.set(sign,sign.record)
+        println(field.getName()+field.get(sign))
+
         SimpleSurnameAndPostcodeQuery simpleSurnameAndPostcodeQuery = new SimpleSurnameAndPostcodeQuery(surname,postCode);
         Customer customer = getExpectedCustomer();
 

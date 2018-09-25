@@ -15,13 +15,21 @@ class HardcodedListOfCustomerCreditsImplTest extends Specification {
     }
 
     def "should return credits available to the customer"() {
-        when:
 
-        hardcodedListOfCustomerCredits.getCustomerCredits("john.doe@192.com");
+        when: "I get the credit scores based on the emails"
 
-        then:
-        int;
+        String email_1="john.doe@192.com";
+        String email_2="sally.smith@192.com";
+        String email_3="harry.lang@192.com";
+
+        int credit_1 = hardcodedListOfCustomerCredits.getCustomerCredits(email_1);
+        int credit_2 = hardcodedListOfCustomerCredits.getCustomerCredits(email_2);
+        int credit_3 = hardcodedListOfCustomerCredits.getCustomerCredits(email_3);
+
+        then: "I get the correct credit score"
+        assert credit_1==credit_2!=credit_3;
     }
+
     def getExpectedCustomers() {
         Collection<Customer> customerArrayList = new ArrayList<Customer>();
         Customer expectedCustomer1 = new Customer();
