@@ -13,7 +13,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpSession;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -21,136 +20,98 @@ import java.util.LinkedList;
 @Controller
 public class SignInController {
 
-   // @Autowired
-    private CustomerService customer_details=new CustomerService();
+    HardcodedListOfCustomerCreditsImpl hardcodedListOfCustomerCredits;
+    int creditsBalance = 0;
+    int numberOfRecordsRetireved = 0;
+    Collection<Record> records;
+    Record record;
+    private CustomerService customer_details = new CustomerService();
     private SearchController searchController;
     private SearchRequest searchRequest;
     private SimpleSurnameAndPostcodeQuery query;
     private ChargingService chargingService;
     private SearchEngineRetrievalService retrievalService;
-    HardcodedListOfCustomerCreditsImpl hardcodedListOfCustomerCredits;
-
     private Customer cust;
     private HttpSession session;
-    int creditsBalance =0;
-    int numberOfRecordsRetireved=0;
-    Collection<Record> records;
-    Record record;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String signin() {
-
         return "signin";
     }
 
-    @RequestMapping(value = "/signin",method = RequestMethod.GET)
-    public String signin_success(@RequestParam String email, HttpSession session)
-    {
-      this.session=session;
-      System.out.print("session is:" +session);
-        if( email ==  null)
-        {
+    @RequestMapping(value = "/signin", method = RequestMethod.GET)
+    public String signin_success(@RequestParam String email, HttpSession session) {
+        this.session = session;
+        System.out.print("session is:" + session);
+        if (email == null) {
             throw new CustomerNotFoundException("Invalid customer");
 
         }
-        //Customer customer = customer_details.findCustomerByEmailAddress(email);
         cust = customer_details.findCustomerByEmailAddress(email);
-        if( cust != null)
-        {
+        if (cust != null) {
             session.setAttribute("loggedInUser", cust);
             return "search.html";
         }
-       return null;
+        return null;
     }
 
-    @RequestMapping(value = "/searchDetails",  method = RequestMethod.POST)
+    @RequestMapping(value = "/searchDetails", method = RequestMethod.POST)
     @ResponseBody
-    public ModelAndView searchDetails(@RequestParam String surname, @RequestParam String postcode) throws NullPointerException
-    {
-        if(session!=null)
-        {
-          cust = (Customer) session.getAttribute("loggedInUser");
-        }
-        else
+    public ModelAndView searchDetails(@RequestParam String surname, @RequestParam String postcode) {
+        if (session != null) {
+            cust = (Customer) session.getAttribute("loggedInUser");
+        } else
             throw new NullPointerException();
-        records = fetchedDetailsFromURI(surname,postcode);
+        records = fetchedDetailsFromURI(surname, postcode);
         ModelAndView model = new ModelAndView();
         model.setViewName("customerdetails");
-        model.addObject("records",records);
-        creditsBalance=hardcodedListOfCustomerCredits.getCustomerCredits(cust.getEmailAddress());
-        model.addObject("creditsavailable",creditsBalance);
+        model.addObject("records", records);
+        creditsBalance = hardcodedListOfCustomerCredits.getCustomerCredits(cust.getEmailAddress());
+        model.addObject("creditsavailable", creditsBalance);
         return model;
-
     }
 
-
-    @RequestMapping(value = "/searchDetailsjson",  method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/searchDetailsjson", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public  Collection<Record> searchDetails_json_output(@RequestParam String surname, @RequestParam String postcode, Model model)
-    {
-        records = fetchedDetailsFromURI(surname,postcode);
+    public Collection<Record> searchDetails_json_output(@RequestParam String surname, @RequestParam String postcode, Model model) {
+        records = fetchedDetailsFromURI(surname, postcode);
         return records;
     }
 
-    /**/
-    public Collection<Record> fetchedDetailsFromURI(String surname, String postcode)
-    {
-        //System.out.print("in controller surname entered is " + surname +"Postcode is " +postcode);
-        query = new SimpleSurnameAndPostcodeQuery(surname,postcode);
-        //System.out.print("query is:: "+query);
+    public Collection<Record> fetchedDetailsFromURI(String surname, String postcode) {
+        query = new SimpleSurnameAndPostcodeQuery(surname, postcode);
         cust = (Customer) session.getAttribute("loggedInUser");
-        //System.out.print("Session customer is***********;" +cust.getSurname());
-        Collection<Record> records = processRecordsforCredits(query,cust);
-        return  records;
-    }
-
-    public Collection<Record> processRecordsforCredits(SimpleSurnameAndPostcodeQuery query, Customer cust)
-    {
-    searchRequest = new SearchRequest(query,cust);
-    chargingService=new ChargingService();
-    Collection<Record> records = searchRequest.search(query);
-    Collection<Record> bt_records = new LinkedList<Record>();
-        hardcodedListOfCustomerCredits = new HardcodedListOfCustomerCreditsImpl();
-    /*ModelAndView model = new ModelAndView();
-    model.setViewName("customerdetails");*/
-    if(cust.getCustomType().toString().contains("PREMIUM"))
-    {
-        int bt_records_size=0;
-        //Returning all Records
-        //model.addObject("records",records);
-        for (Record r:records
-                ) {
-            if( r.getSourceTypes().toString().contains("BT"))
-            {
-                bt_records_size++;
-            }
-        }
-        //System.out.print("number of BT records for the customer is :%%%%" +bt_records_size);
-        numberOfRecordsRetireved=records.size()-bt_records_size;
-        chargingService.charge(cust.getEmailAddress(),numberOfRecordsRetireved);
-        //creditsBalance=hardcodedListOfCustomerCredits.getCustomerCredits(cust.getEmailAddress());
-        //System.out.print("In the last pahse, credits available are;" +hardcodedListOfCustomerCredits.getCustomerCredits(cust.getEmailAddress()));
+        Collection<Record> records = processRecordsforCredits(query, cust);
         return records;
     }
-    else
-    {
-        //Returning BT Specific Records
-        //System.out.print(" he is non paying customer");
-        for (Record r:records
-                ) {
-            if( r.getSourceTypes().toString().contains("BT"))
-            {
-                bt_records.add(r);
-                //model.addObject("records",bt_records);
-                return bt_records;
+
+    public Collection<Record> processRecordsforCredits(SimpleSurnameAndPostcodeQuery query, Customer cust) {
+        int btRecordsSize = 0;
+        searchRequest = new SearchRequest(query, cust);
+        chargingService = new ChargingService();
+        Collection<Record> records = searchRequest.search(query);
+        Collection<Record> bt_records = new LinkedList<Record>();
+        hardcodedListOfCustomerCredits = new HardcodedListOfCustomerCreditsImpl();
+
+        if (cust.getCustomType().toString().contains("PREMIUM")) {
+            btRecordsSize = 0;
+            for (Record r : records) {
+                if (r.getSourceTypes().toString().contains("BT")) {
+                    btRecordsSize++;
+                }
             }
-
+            numberOfRecordsRetireved = records.size() - btRecordsSize;
+            chargingService.charge(cust.getEmailAddress(), numberOfRecordsRetireved);
+            return records;
+        } else {
+            for (Record r : records
+            ) {
+                if (r.getSourceTypes().toString().contains("BT")) {
+                    bt_records.add(r);
+                    return bt_records;
+                }
+            }
         }
-
+        return null;
     }
-
-
-    return null;
-
-}
 }

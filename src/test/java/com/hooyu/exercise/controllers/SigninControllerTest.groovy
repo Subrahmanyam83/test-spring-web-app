@@ -1,7 +1,7 @@
 package com.hooyu.exercise.controllers
 
 import com.hooyu.exercise.customers.CustomerService
-import com.hooyu.exercise.customers.dao.HardcodedListOfCustomersImpl
+import com.hooyu.exercise.customers.dao.CustomerNotFoundException
 import com.hooyu.exercise.customers.domain.Customer
 import com.hooyu.exercise.customers.domain.CustomerType
 import net.icdpublishing.exercise2.searchengine.domain.Address
@@ -11,21 +11,8 @@ import net.icdpublishing.exercise2.searchengine.domain.SourceType
 import net.icdpublishing.exercise2.searchengine.requests.SimpleSurnameAndPostcodeQuery
 import org.powermock.api.mockito.PowerMockito
 import org.powermock.core.classloader.annotations.PrepareForTest
-import org.powermock.modules.junit4.PowerMockRunner
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.actuate.audit.AuditEvent
 import org.springframework.mock.web.MockHttpSession
 import spock.lang.Specification
-import org.springframework.mock.web.MockHttpServletRequest
-import javax.servlet.http.HttpSession;
-import org.junit.runner.*;
-import org.powermock.api.mockito.PowerMockito
-
-import java.lang.reflect.Field;
-
-/**
- * Created by Subrahmanyam on 24/09/2018.
- */
 
 @PrepareForTest(value = CustomerService.class)
 class SigninControllerTest extends Specification {
@@ -33,107 +20,59 @@ class SigninControllerTest extends Specification {
     SignInController controller;
     SimpleSurnameAndPostcodeQuery query;
     MockHttpSession mockHttpSession;
-
+    private String joe_email="john.doe@192.com";
 
     def setup() {
-        //customer_details= new CustomerService();
         controller = new SignInController();
         query = new SimpleSurnameAndPostcodeQuery("Smith", "sw6 2bq");
         mockHttpSession = new MockHttpSession();
-
     }
 
-//    @Rule
-//    public MockitoRule mockitoRule = MockitoJUnit.rule();
 
-//    def "authorized customer on sigining in, search form must come"() {
-//
-//        when:
-//
-//       // SignInController mockSignInController = mock(SignInController.class);
-//        SignInController mockSignInController = new SignInController();
-//        CustomerService customer_details = mock(CustomerService.class);
-//
-//        HardcodedListOfCustomersImpl hardcodedListOfCustomersMock = mock(HardcodedListOfCustomersImpl);
-//        when(hardcodedListOfCustomersMock.findCustomerByEmailAddress(anyString())).thenReturn(getExpectedCustomer())
-//
-//        and:
-//        String returnValue = mockSignInController.signin_success("john.doe@192.com",mockHttpSession)
-//
-//        then:
-//        assert returnValue.equals("search.html");
-//    }
+    def "return valid html when the sign in successful"() {
 
-    def "authorized customer on sigining in, search form must come"() {
+        when: "I do a successful sign in"
+            SignInController signInController = new SignInController();
+            CustomerService spyCustomerService = PowerMockito.mock(CustomerService.class);
+            PowerMockito.whenNew(CustomerService.class).withNoArguments().thenReturn(spyCustomerService);
+            PowerMockito.when(spyCustomerService.findCustomerByEmailAddress(asType(String.class))).thenReturn(getExpectedCustomer())
+            String returnValue = signInController.signin_success(joe_email, mockHttpSession)
 
-        when: "this is dalling "
+        then: "i should be able to view correct html page"
+            assert returnValue.equals("search.html");
+    }
 
-        SignInController signInController = new SignInController();
 
-        CustomerService spyCustomerService = PowerMockito.mock(CustomerService.class);
-        PowerMockito.whenNew(CustomerService.class).withNoArguments().thenReturn(spyCustomerService);
+    def "throw exception for an invalid email id sign in attempt"() {
 
-        PowerMockito.when(spyCustomerService.findCustomerByEmailAddress(asType(String.class))).thenReturn(getExpectedCustomer())
-
+        when: "return valid html when the sign in sucessful"
+            SignInController signInController = new SignInController();
+            String invalid_email="xyz@abc.com";
         and:
-        String returnValue = signInController.signin_success("john.doe@192.com", mockHttpSession)
+            signInController.signin_success(invalid_email, mockHttpSession)
 
         then:
-        assert returnValue.equals("search.html");
+            thrown CustomerNotFoundException
     }
 
 
 
-/*
+    def "Find records for provided Surname and Postcode"() {
 
-    def "Returning Records in Tabular format"() {
-        when:
-        controller.searchDetails("john.doe@192.com","sw6 2bq")
-
-        then:
-        "CustomerDetails.html"
-    }
-
-
-*/
-
-
-    def "Find records for provided Surname + Postcode"() {
         given: "I have record details for Surname - Smith and postcode - sw6 2bq"
+            String surname= "Smith";
+            String postCode = "sw6 2bq"
 
-        String surname= "Smith";
-        String postCode = "sw6 2bq"
-
-
-
-        Field field = controller.getClass().getDeclaredField("cust");
-        if(field.equals(null)){
-            println("alue is null")
-        }
-        field.setAccessible(true)
-        SignInController sign = new SignInController();
-        field.set(sign,sign.record)
-        println(field.getName()+field.get(sign))
-
-        SimpleSurnameAndPostcodeQuery simpleSurnameAndPostcodeQuery = new SimpleSurnameAndPostcodeQuery(surname,postCode);
-        Customer customer = getExpectedCustomer();
+            SimpleSurnameAndPostcodeQuery simpleSurnameAndPostcodeQuery = new SimpleSurnameAndPostcodeQuery(surname,postCode);
+            Customer customer = getExpectedCustomer();
 
         when:
-
-        Collection<Record> collection = controller.processRecordsforCredits(simpleSurnameAndPostcodeQuery,customer);
+            Collection<Record> collection = controller.processRecordsforCredits(simpleSurnameAndPostcodeQuery,customer);
 
         then:
-
-        assert collection.toArray().sort()[0].equals(getExpectedRecords().toArray().sort()[0])
+            assert collection.toArray().sort()[0].equals(getExpectedRecords().toArray().sort()[0])
     }
 
-//    def "Process records based on customer and returns credits"() {
-//        when:
-//        controller.processRecordsforCredits(query,expectedCustomer)
-//
-//        then:
-//        Collection<Record> records
-//    }
 
     def getExpectedCustomer() {
         Customer expectedCustomer = new Customer();

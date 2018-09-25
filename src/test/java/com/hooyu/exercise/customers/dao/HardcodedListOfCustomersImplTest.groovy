@@ -7,41 +7,44 @@ import spock.lang.Specification;
 class HardcodedListOfCustomersImplTest extends Specification {
 
 	private HardcodedListOfCustomersImpl customerImpl;
+	String joe_email="john.doe@192.com";
 	
 	def setup() {
 		customerImpl = new HardcodedListOfCustomersImpl();
 	}
 
-	def "should return expected customer"() {
+	def "retrieve customer details based on email"() {
+		given: "I have details of Joe"
+			String forename= "John"
+			String surname= "Doe"
+			String customerType = CustomerType.PREMIUM;
 		when:
-			def customer = customerImpl.findCustomerByEmailAddress("john.doe@192.com");
+			def customer = customerImpl.findCustomerByEmailAddress(joe_email);
 
 		then:
-			customer.equals(getExpectedCustomer())
+			assert customer.surname.equals(surname)
+			assert customer.forename.equals(forename)
+			assert customer.customType.name().equals(customerType)
 	}
 
-	def "should throw CustomerNotFoundException"() {
+	def "retrieve customer details for a non-existent email"() {
+		given: "I have an email for a non-existing customer"
+			String email = "abc@xyz.com"
+
 		when:
-			customerImpl.findCustomerByEmailAddress("invalid_customer@192.com")
+			customerImpl.findCustomerByEmailAddress(email);
 
 		then:
-			thrown(CustomerNotFoundException.class)
+			assert customerImpl.customer.equals(null)
+			thrown CustomerNotFoundException
 	}
 
-	def "should return list of  Customers"() {
+	def "get the count of the customers"() {
+
 		when:
-		customerImpl.getCustomers()
+			def customers = customerImpl.getCustomers();
 
 		then:
-		ArrayList<Customer> allCustomers;
-	}
-
-	def getExpectedCustomer() {
-		Customer expectedCustomer = new Customer();
-		expectedCustomer.setEmailAddress("john.doe@192.com");
-		expectedCustomer.setForename("John");
-		expectedCustomer.setSurname("Doe");
-		expectedCustomer.setCustomType(CustomerType.PREMIUM);
-		return expectedCustomer;
+			assert customers.size().equals(3)
 	}
 }

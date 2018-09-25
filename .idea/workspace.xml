@@ -2,13 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d064a5-93bf-4dbc-8577-49dca6d5aa4d" name="Default" comment="adding new features">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/SearchRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/SearchRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/controllers/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/controllers/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/controllers/SignInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/controllers/SignInController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/ChargingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/ChargingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/CustomerCreditsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/CustomerCreditsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/CustomerNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/CustomerNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/CustomerCredits.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/CustomerCredits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/CustomerType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/customers/domain/CustomerType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/exceptions/ChargingException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/exceptions/ChargingException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/exceptions/InvalidSearchRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/hooyu/exercise/exceptions/InvalidSearchRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/signin.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/signin.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerCredits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerCredits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ChargingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ChargingException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/InvalidSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/InvalidSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/signin.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/signin.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SearchControllerTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SearchControllerTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -63,72 +103,143 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
+          <entry key="class" value="13" />
+          <entry key="ftl" value="2" />
+          <entry key="gitignore" value="2" />
           <entry key="gradle" value="1" />
-          <entry key="groovy" value="7" />
-          <entry key="java" value="16" />
-          <entry key="properties" value="2" />
+          <entry key="groovy" value="24" />
+          <entry key="html" value="4" />
+          <entry key="java" value="68" />
+          <entry key="properties" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
-          <entry key="Groovy" value="8" />
-          <entry key="JAVA" value="16" />
-          <entry key="Properties" value="2" />
+          <entry key="CLASS" value="13" />
+          <entry key="Git file" value="2" />
+          <entry key="Groovy" value="25" />
+          <entry key="HTML" value="4" />
+          <entry key="JAVA" value="68" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="class" value="3" />
           <entry key="gradle" value="2" />
-          <entry key="groovy" value="1328" />
-          <entry key="java" value="25" />
-          <entry key="properties" value="17" />
+          <entry key="groovy" value="2836" />
+          <entry key="java" value="230" />
+          <entry key="properties" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="1330" />
-          <entry key="JAVA" value="25" />
-          <entry key="Properties" value="17" />
+          <entry key="CLASS" value="3" />
+          <entry key="Groovy" value="2838" />
+          <entry key="JAVA" value="230" />
+          <entry key="Properties" value="24" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-466">
+              <caret line="37" column="132" selection-start-line="37" selection-start-column="132" selection-end-line="37" selection-end-column="132" />
+              <folding>
+                <element signature="e#40#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="60">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+            <state relative-caret-position="429">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#45#96#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="67">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="352">
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/customerdetails.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/signin.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SearchControllerTest.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -150,6 +261,12 @@
       <find>charge</find>
       <find>cole</find>
       <find>setCustomersCredits</find>
+      <find>createDummyCustomer</find>
+      <find>processRecordsforCredits</find>
+      <find>searchDetails</find>
+      <find>fetchedDetailsFromURI</find>
+      <find>getExpectedRecords</find>
+      <find>getResults</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -414,8 +531,6 @@
       <list>
         <option value="$PROJECT_DIR$/sign-in_form.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/search.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/search.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/customerdetails.html" />
@@ -425,27 +540,32 @@
         <option value="$PROJECT_DIR$/src/test/java/unittests/ExerciseTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/InvalidUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ChargingException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerCredits.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/customerdetails.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/search.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/signin.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/InvalidSearchRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/signin.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerCredits.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ChargingException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SearchControllerTest.groovy" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -531,7 +651,34 @@
               <item name="test-spring-web-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="customers" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-spring-web-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-spring-web-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-spring-web-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-spring-web-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-spring-web-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-spring-web-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test-spring-web-app" type="b2602c69:ProjectViewProjectNode" />
@@ -609,7 +756,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537833577594" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537840157164" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -642,7 +789,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HardcodedListOfCustomerCreditsImplTest.should return credits available to the customer">
+  <component name="RunManager" selected="JUnit.SigninControllerTest.Find records for provided Surname and Postdasdcode">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -700,41 +847,7 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
-    <configuration name="HardcodedListOfCustomerCreditsImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-spring-web-app_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hooyu.exercise.customers.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hooyu.exercise.customers.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.hooyu.exercise.customers.dao.HardcodedListOfCustomerCreditsImplTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HardcodedListOfCustomerCreditsImplTest.should return credits available to the customer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-spring-web-app_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hooyu.exercise.customers.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hooyu.exercise.customers.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.hooyu.exercise.customers.dao.HardcodedListOfCustomerCreditsImplTest" />
-      <option name="METHOD_NAME" value="should return credits available to the customer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HardcodedListOfCustomersImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HardcodedListOfCustomersImplTest.get the count of the customers after adding a customer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-spring-web-app_test" />
       <extension name="coverage">
         <pattern>
@@ -744,30 +857,16 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hooyu.exercise.customers.dao" />
       <option name="MAIN_CLASS_NAME" value="com.hooyu.exercise.customers.dao.HardcodedListOfCustomersImplTest" />
+      <option name="METHOD_NAME" value="get the count of the customers after adding a customer" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SigninControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hooyu.exercise.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hooyu.exercise.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.hooyu.exercise.controllers.SigninControllerTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SigninControllerTest.Find records for provided Surname + Postcode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise_test" />
+      <module name="test-spring-web-app_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hooyu.exercise.controllers.*" />
@@ -779,7 +878,61 @@
       <option name="METHOD_NAME" value="Find records for provided Surname + Postcode" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SigninControllerTest.Find records for provided Surname and Postdasdcode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-spring-web-app_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hooyu.exercise.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hooyu.exercise.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.hooyu.exercise.controllers.SigninControllerTest" />
+      <option name="METHOD_NAME" value="Find records for provided Surname and Postdasdcode" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SigninControllerTest.I do not make a successful sign in attempt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-spring-web-app_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hooyu.exercise.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hooyu.exercise.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.hooyu.exercise.controllers.SigninControllerTest" />
+      <option name="METHOD_NAME" value="I do not make a successful sign in attempt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SigninControllerTest.throw exception on unsuccessful sign in attempt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-spring-web-app_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hooyu.exercise.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hooyu.exercise.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.hooyu.exercise.controllers.SigninControllerTest" />
+      <option name="METHOD_NAME" value="throw exception on unsuccessful sign in attempt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -870,19 +1023,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.Unnamed" />
-      <item itemvalue="JUnit.SigninControllerTest" />
+      <item itemvalue="JUnit.HardcodedListOfCustomersImplTest.get the count of the customers after adding a customer" />
       <item itemvalue="JUnit.SigninControllerTest.Find records for provided Surname + Postcode" />
-      <item itemvalue="JUnit.HardcodedListOfCustomerCreditsImplTest.should return credits available to the customer" />
-      <item itemvalue="JUnit.HardcodedListOfCustomersImplTest" />
-      <item itemvalue="JUnit.HardcodedListOfCustomerCreditsImplTest" />
+      <item itemvalue="JUnit.SigninControllerTest.I do not make a successful sign in attempt" />
+      <item itemvalue="JUnit.SigninControllerTest.throw exception on unsuccessful sign in attempt" />
+      <item itemvalue="JUnit.SigninControllerTest.Find records for provided Surname and Postdasdcode" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HardcodedListOfCustomerCreditsImplTest.should return credits available to the customer" />
-        <item itemvalue="JUnit.HardcodedListOfCustomersImplTest" />
-        <item itemvalue="JUnit.HardcodedListOfCustomerCreditsImplTest" />
+        <item itemvalue="JUnit.SigninControllerTest.Find records for provided Surname and Postdasdcode" />
+        <item itemvalue="JUnit.SigninControllerTest.throw exception on unsuccessful sign in attempt" />
+        <item itemvalue="JUnit.SigninControllerTest.I do not make a successful sign in attempt" />
         <item itemvalue="JUnit.SigninControllerTest.Find records for provided Surname + Postcode" />
-        <item itemvalue="JUnit.SigninControllerTest" />
+        <item itemvalue="JUnit.HardcodedListOfCustomersImplTest.get the count of the customers after adding a customer" />
       </list>
     </recent_temporary>
   </component>
@@ -908,35 +1061,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_+_Postcode - 2018.09.25 at 00h 46m 09s.xml">
+    <history-entry file="HardcodedListOfCustomersImplTest_retrieve_customer_details_for_a_non-existent_email - 2018.09.25 at 02h 17m 06s.xml">
+      <configuration name="HardcodedListOfCustomersImplTest.retrieve customer details for a non-existent email" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HardcodedListOfCustomersImplTest_retrieve_customer_details_for_a_non-existent_email - 2018.09.25 at 02h 17m 50s.xml">
+      <configuration name="HardcodedListOfCustomersImplTest.retrieve customer details for a non-existent email" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HardcodedListOfCustomersImplTest_retrieve_customer_details_for_a_non-existent_email - 2018.09.25 at 02h 19m 15s.xml">
+      <configuration name="HardcodedListOfCustomersImplTest.retrieve customer details for a non-existent email" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HardcodedListOfCustomersImplTest_get_the_count_of_the_customers - 2018.09.25 at 02h 21m 03s.xml">
+      <configuration name="HardcodedListOfCustomersImplTest.get the count of the customers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HardcodedListOfCustomersImplTest_get_the_count_of_the_customers_after_adding_a_customer - 2018.09.25 at 02h 25m 37s.xml">
+      <configuration name="HardcodedListOfCustomersImplTest.get the count of the customers after adding a customer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HardcodedListOfCustomersImplTest_get_the_count_of_the_customers_after_adding_a_customer - 2018.09.25 at 02h 25m 56s.xml">
+      <configuration name="HardcodedListOfCustomersImplTest.get the count of the customers after adding a customer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_+_Postcode - 2018.09.25 at 02h 28m 31s.xml">
       <configuration name="SigninControllerTest.Find records for provided Surname + Postcode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_+_Postcode - 2018.09.25 at 00h 46m 36s.xml">
-      <configuration name="SigninControllerTest.Find records for provided Surname + Postcode" configurationId="JUnit" />
+    <history-entry file="SigninControllerTest_I_do_not_make_a_successful_sign_in_attempt - 2018.09.25 at 02h 36m 09s.xml">
+      <configuration name="SigninControllerTest.I do not make a successful sign in attempt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_+_Postcode - 2018.09.25 at 00h 47m 55s.xml">
-      <configuration name="SigninControllerTest.Find records for provided Surname + Postcode" configurationId="JUnit" />
+    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_and_Postdasdcode - 2018.09.25 at 02h 42m 54s.xml">
+      <configuration name="SigninControllerTest.Find records for provided Surname and Postdasdcode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_+_Postcode - 2018.09.25 at 00h 48m 12s.xml">
-      <configuration name="SigninControllerTest.Find records for provided Surname + Postcode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_+_Postcode - 2018.09.25 at 00h 48m 59s.xml">
-      <configuration name="SigninControllerTest.Find records for provided Surname + Postcode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HardcodedListOfCustomerCreditsImplTest_should_return_credits_available_to_the_customer - 2018.09.25 at 00h 54m 47s.xml">
-      <configuration name="HardcodedListOfCustomerCreditsImplTest.should return credits available to the customer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HardcodedListOfCustomersImplTest - 2018.09.25 at 00h 55m 10s.xml">
-      <configuration name="HardcodedListOfCustomersImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HardcodedListOfCustomerCreditsImplTest - 2018.09.25 at 00h 57m 48s.xml">
-      <configuration name="HardcodedListOfCustomerCreditsImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HardcodedListOfCustomersImplTest - 2018.09.25 at 00h 57m 55s.xml">
-      <configuration name="HardcodedListOfCustomersImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SigninControllerTest_Find_records_for_provided_Surname_+_Postcode - 2018.09.25 at 00h 57m 58s.xml">
-      <configuration name="SigninControllerTest.Find records for provided Surname + Postcode" configurationId="JUnit" />
+    <history-entry file="SigninControllerTest_throw_exception_on_unsuccessful_sign_in_attempt - 2018.09.25 at 02h 44m 34s.xml">
+      <configuration name="SigninControllerTest.throw exception on unsuccessful sign in attempt" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -950,17 +1103,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="DB Browser" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22317597" />
-      <window_info id="Structure" order="1" weight="0.24964234" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Nl-Palette" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35407725" />
+      <window_info id="DB Browser" order="1" />
+      <window_info id="Structure" order="2" weight="0.24964234" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Nl-Palette" order="8" />
       <window_info anchor="bottom" id="FindBugs-IDEA" />
       <window_info anchor="bottom" id="DB Execution Console" />
       <window_info anchor="bottom" id="GitLabIntegration" />
@@ -975,10 +1127,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293919" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.39405206" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.39405206" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32713756" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3293919" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3283767" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -992,8 +1144,8 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info id="DB Browser" order="0" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.22317597" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22317597" />
+      <window_info id="DB Browser" order="1" />
       <window_info id="Structure" order="2" weight="0.24964234" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -1018,7 +1170,7 @@
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.39405206" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="16" weight="0.32713756" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.3293919" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.3283767" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1072,88 +1224,88 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
-          <line>48</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
-          <line>56</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
-          <line>102</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy</url>
-          <line>112</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy</url>
-          <line>114</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy</url>
-          <line>115</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java</url>
-          <line>44</line>
+          <line>16</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy</url>
-          <line>24</line>
+          <line>19</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy</url>
-          <line>29</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1164,6 +1316,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>customer.customType.name().equals(customerType)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>customer.customType</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>c.get</expression-string>
         <language-id>JAVA</language-id>
@@ -1199,38 +1361,9 @@
         <language-id>Groovy</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>(collection.toArray().sort()[0])</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((Person)collection.toArray().sort()[0]).getForename()</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>collection.toArray().sort()</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/external_dependencies/legacy-charging-1.0-sources.jar!/net/icdpublishing/exercise2/myapp/charging/dao/ImaginaryChargingDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external_dependencies/search-engine-1.0-sources.jar!/net/icdpublishing/exercise2/searchengine/services/SearchEngineRetrievalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/external_dependencies/legacy-charging-1.0-sources.jar!/net/icdpublishing/exercise2/myapp/charging/services/ChargingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1267,118 +1400,13 @@
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spockframework/spock-core/1.1-groovy-2.4/1c42014d4a18995d5d4aa10a4e060e88f60fdf78/spock-core-1.1-groovy-2.4.jar!/spock/lang/Specification.class" />
-    <entry file="jar://$PROJECT_DIR$/external_dependencies/legacy-charging-1.0.jar!/net/icdpublishing/exercise2/myapp/charging/ChargingException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/InvalidSearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ChargingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest/groovy.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOdCustomerCredits.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerCredits.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/customerdetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/signin.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/external_dependencies/search-engine-1.0.jar!/net/icdpublishing/exercise2/searchengine/loader/DataLoader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="59" column="37" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SearchControllerTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1397,13 +1425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1411,31 +1432,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-all/1.9.5/79a8984096fc6591c1e3690e07d41be506356fa5/mockito-all-1.9.5.jar!/org/mockito/Mockito.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1464,13 +1464,6 @@
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/external_dependencies/search-engine-1.0-sources.jar!/net/icdpublishing/exercise2/searchengine/loader/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1485,20 +1478,216 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external_dependencies/legacy-charging-1.0.jar!/net/icdpublishing/exercise2/myapp/charging/services/ImaginaryChargingService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external_dependencies/legacy-charging-1.0.jar!/net/icdpublishing/exercise2/myapp/charging/ChargingException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/controllers/SignInController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="-143">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerCredits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/domain/CustomerType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/ChargingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ChargingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/ExceptionHandlerControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/exceptions/InvalidSearchRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/SearchRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/customerdetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/signin.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SearchControllerTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/controllers/SigninControllerTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="-466">
+          <caret line="37" column="132" selection-start-line="37" selection-start-column="132" selection-end-line="37" selection-end-column="132" />
           <folding>
             <element signature="e#40#91#0" expanded="true" />
           </folding>
@@ -1507,36 +1696,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImplTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/CustomerCreditsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomersImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="67">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/dao/HardcodedListOfCustomerCreditsImplTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hooyu/exercise/customers/domain/ChargingServiceTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#45#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>

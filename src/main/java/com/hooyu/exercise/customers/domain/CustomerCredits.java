@@ -1,8 +1,5 @@
 package com.hooyu.exercise.customers.domain;
 
-/**
- * Created by Subrahmanyam on 24/09/2018.
- */
 public class CustomerCredits {
     private Customer customer;
     private int customerCredits;
@@ -13,7 +10,6 @@ public class CustomerCredits {
     }
 
     public Customer getCustomer() {
-
         return customer;
     }
 
