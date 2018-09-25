@@ -1,7 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
-.gradle/4.10.2/vcsMetadata-1/
-.idea/sonarlint/
-build/resources/main/static/
-build/tmp/compileJava/
-lib/
-
+.gradle/*
+.idea/*
+/build/*
+/lib/*
+/out/*
