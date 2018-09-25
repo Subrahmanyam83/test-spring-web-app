@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<table border="1">
+    <tr>
+        <th>Forename</th>
+        <th>Middlename</th>
+        <th>Surname</th>
+        <th>Buildnumber</th>
+        <th>Postcode</th>
+        <th>Street</th>
+        <th>Town</th>
+        <th>Source Types</th>
+    </tr>
+    <tr th:each="record : ${records}">
+        <td th:text="${record.person.forename}">forename</td>
+        <td th:text="${record.person.middlename}">surname ...</td>
+        <td th:text="${record.person.surname}">surname ...</td>
+
+        <td th:text="${record.person.address.buildnumber}">buildnumber</td>
+        <td th:text="${record.person.address.postcode}">postcode ...</td>
+        <td th:text="${record.person.address.street}">street ...</td>
+        <td th:text="${record.person.address.town}">town ...</td>
+        <td th:text="${record.sourceTypes}">sourceTypes ...</td>
+
+    </tr>
+</table>
+<h4>
+    The Credits available for you are
+    <p  th:text="${creditsavailable}"/>
+</h4>
+</body>
+</html>

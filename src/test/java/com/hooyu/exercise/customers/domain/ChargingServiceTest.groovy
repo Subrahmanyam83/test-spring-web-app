@@ -3,18 +3,17 @@ package com.hooyu.exercise.customers.domain
 import com.hooyu.exercise.customers.ChargingService
 import com.hooyu.exercise.customers.dao.HardcodedListOfCustomerCreditsImpl
 import com.hooyu.exercise.customers.dao.HardcodedListOfCustomersImpl
-import com.hooyu.exercise.exceptions.ChargingException
-import javafx.beans.binding.When
 import spock.lang.Specification
+import net.icdpublishing.exercise2.myapp.charging.ChargingException;
 
-/**
- * Created by Subrahmanyam on 24/09/2018.
- */
 class ChargingServiceTest extends Specification{
 
     private ChargingService chargingService;
     private HardcodedListOfCustomersImpl hardcodedListOfCustomers;
     HardcodedListOfCustomerCreditsImpl hardcodedListOfCustomerCredits
+    String joe_email="john.doe@192.com";
+    String sally_email="sally.smith@192.com";
+    String harry_email="harry.lang@192.com";
 
     def setup() {
         chargingService = new ChargingService();
@@ -22,40 +21,47 @@ class ChargingServiceTest extends Specification{
         hardcodedListOfCustomerCredits = new HardcodedListOfCustomerCreditsImpl();
     }
 
-    def "FInds customer"() {
+    def "charge credits for premium customer less than the current credits"() {
         when:
-        hardcodedListOfCustomers.findCustomerByEmailAddress("john.doe@192.com");
-
+        chargingService.charge(joe_email,20)
 
         then:
-        expectedCustomer
+        assert chargingService.availableCredits.equals(172)
     }
-    def "Get Credits for the customer" (){
 
 
+    def "charge credits for premium customer equal to the current credits"() {
         when:
-        expectedCustomer.getCustomType().toString().contains("PREMIUM")
+        chargingService.charge(joe_email,192)
 
         then:
-        int
-
+        assert chargingService.availableCredits.equals(0)
+        assert new ChargingException("Credits out of balance. Please topup")
     }
-    def "Get Zero Credits" (){
 
 
+    def "charge premium customers with more than the current credits" (){
         when:
-        "Get Credits for the customer" <0
+        chargingService.charge(sally_email,200)
 
         then:
-        thrown(ChargingException)
-
+        assert chargingService.availableCredits<0
     }
-    def getExpectedCustomer() {
-        Customer expectedCustomer = new Customer();
-        expectedCustomer.setEmailAddress("john.doe@192.com");
-        expectedCustomer.setForename("John");
-        expectedCustomer.setSurname("Doe");
-        expectedCustomer.setCustomType(CustomerType.PREMIUM);
-        return expectedCustomer;
+
+    def "charge some credit for non-premium customer" (){
+        when:
+        chargingService.charge(harry_email,20)
+
+        then:
+        assert new ChargingException("Credits out of balance. Please topup")
+    }
+
+
+    def "charge non-premium customers with zero credits"(){
+        when:
+        chargingService.charge(harry_email,0)
+
+        then:
+        assert chargingService.availableCredits.equals(0)
     }
 }
